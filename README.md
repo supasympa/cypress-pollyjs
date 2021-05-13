@@ -2,7 +2,7 @@
 
 A currently non-working example of using Cypress and PollyJs together.
 
-#Aim
+## Aim
 To be able to add PollyJs to Cypress to improve development and test workflow by:
 
 * easily record test stubs for Cypress tests
