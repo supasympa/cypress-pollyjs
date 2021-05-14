@@ -1,6 +1,7 @@
 # cypress-pollyjs
 *Work in progress*
 A currently non-working example of using Cypress and PollyJs together.
+[https://github.com/Netflix/pollyjs/issues/388](Issue posted with Netflix / PollyJS) 
 
 ## Motivation
 When testing with Cypress, using the native fixtures for API payloads, against existing web APIs, there is a potentially a large development effort to extract and maintain the fixtures. 
