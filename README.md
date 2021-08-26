@@ -1,5 +1,16 @@
 # cypress-pollyjs
 
+Currently this is just an example of Cypress working with PollyJS. The intention though, is to create a Cypress plugin from this working example. 
+
+## Get started
+```
+npm i
+npm run serve
+npm run polly:listen
+npm run cy:open
+```
+Then run the tests in the Cypress runner, with the network tab open. The first test should create your recording, the second test should then use the recording (as should subsequent test runs). 
+
 ## Motivation
 When testing with Cypress, using the native fixtures for API payloads, against existing web APIs, there is a potentially a large development effort to extract and maintain the fixtures. 
 
