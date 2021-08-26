@@ -34,18 +34,25 @@ describe("Polly JS", () => {
 
       const { server } = polly;
 
-      server.any('https://jsonplaceholder.typicode.com/*').recordingName('jsonplaceholder');
+      server.any('https://jsonplaceholder.typicode.com').recordingName('jsonplaceholder');
     });
   });
 
-  it("should work", () => {
+  it("should request", () => {
     cy.visit("/index.html");
+    cy.get(`[data-testing="result"]`).should('contain', '{"userId":1,"id":12,"title":"ipsa repellendus fugit nisi","completed":true}');
+  });
+
+  it("should mock", () => {
+    cy.visit("/index.html");
+    cy.get(`[data-testing="result"]`).should('contain', '{"userId":1,"id":12,"title":"ipsa repellendus fugit nisi","completed":true}');
   });
 
   afterEach(() => {
     cy.wrap(null, { log: true }).then(() => {
       const pollyInstance = Cypress.config(POLLY_INSTANCE);
       pollyInstance.disconnectFrom("fetch");
+      cy.log('over and out')
       return pollyInstance.stop();
     });
   });

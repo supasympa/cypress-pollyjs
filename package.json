@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@pollyjs/adapter-fetch": "^5.1.0",
-    "@pollyjs/cli": "^5.0.0",
-    "@pollyjs/core": "^5.1.0",
-    "@pollyjs/persister-local-storage": "^5.0.0",
-    "@pollyjs/persister-rest": "^5.0.0",
-    "cypress": "^7.2.0",
+    "@pollyjs/adapter-fetch": "^5.1.1",
+    "@pollyjs/cli": "^5.1.1",
+    "@pollyjs/core": "^5.1.1",
+    "@pollyjs/persister-local-storage": "^5.1.1",
+    "@pollyjs/persister-rest": "^5.1.1",
+    "cypress": "^8.3.0",
     "http-server": "^0.12.3"
   }
 }
