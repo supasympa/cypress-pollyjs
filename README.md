@@ -1,9 +1,4 @@
 # cypress-pollyjs
-**Work in progress**
-
-A currently non-working example of using Cypress and PollyJs together.
-
-[Issue posted with Netflix / PollyJS](https://github.com/Netflix/pollyjs/issues/388) 
 
 ## Motivation
 When testing with Cypress, using the native fixtures for API payloads, against existing web APIs, there is a potentially a large development effort to extract and maintain the fixtures. 
@@ -15,7 +10,7 @@ When testing with Cypress, using the native fixtures for API payloads, against e
 Improve developer development / test workflows by making the creation and maintenance of api test fixtures more automated.
 
 ## Approach
-Add a low / zero config plugin to Cypress or an adapter to PollyJS to take advantage of PollyJs within tests from natural commands.
+Add a low config plugin to Cypress to take advantage of PollyJs within tests from natural commands.
 
 + easily record test stubs for Cypress tests
 + help keep test stubs up to date with underlying APIs
